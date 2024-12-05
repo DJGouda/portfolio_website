@@ -5,4 +5,13 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-const goToTopButton = document.getElementById('goToTop');
+function scrollToTop() {
+  // Check screen width
+  if (window.innerWidth > 1200) {
+    // Desktop mode
+    location.href = '#desktop-nav';
+  } else {
+    // Mobile mode
+    location.href = '#hamburger-nav';
+  }
+}
